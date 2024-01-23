@@ -63,7 +63,8 @@
         });
 
         $('.entry').slideUp("slow");
-    })
+        $('#bg-music').play();
+    });
     
     var wind = $(window);
     
@@ -347,6 +348,7 @@
             $('.guest-name').val(urlParams.get('name'));
         } else {
             $('#entry-banner').hide();
+            $('#bg-music').play();
         }
 
         fullHeight();
