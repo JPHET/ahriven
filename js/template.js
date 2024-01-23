@@ -56,6 +56,12 @@
 
     // Entry banner
     $('#entry-banner').on("click",function (){
+        // Enable Scroll
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
+
         $('.entry').slideUp("slow");
     })
     
@@ -327,13 +333,25 @@
 
     // Document on load.
     $(function () {
+        if(urlParams.get('name') != "" && urlParams.get('name') != null) {
+            $('#welcome-banner').fadeIn(3000);
+
+            // Disable Scroll
+            $('html, body').css({
+                overflow: 'hidden',
+                height: '100%'
+            });
+    
+            // Populate label and textbox name
+            $('.guest-name').text(urlParams.get('name'));
+            $('.guest-name').val(urlParams.get('name'));
+        } else {
+            $('#entry-banner').hide();
+        }
+
         fullHeight();
         contentWayPoint();
         sliderMain();
-
-        // Populate label and textbox name
-        $('.guest-name').text(urlParams.get('name'));
-        $('.guest-name').val(urlParams.get('name'));
     });
     
 
