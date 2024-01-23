@@ -53,6 +53,11 @@
     $(window).load(function() {
     $('.preloader').fadeOut("slow");
     });
+
+    // Entry banner
+    $('#entry-banner').on("click",function (){
+        $('.entry').slideUp("slow");
+    })
     
     var wind = $(window);
     
@@ -317,13 +322,21 @@
     }
 });
     
+    // Get Query Params
+    var urlParams = new URLSearchParams(window.location.search);
+
     // Document on load.
     $(function () {
         fullHeight();
         contentWayPoint();
         sliderMain();
+
+        // Populate label and textbox name
+        $('.guest-name').text(urlParams.get('name'));
+        $('.guest-name').val(urlParams.get('name'));
     });
     
+
     // Progress-wrap
      var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
