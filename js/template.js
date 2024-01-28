@@ -64,6 +64,21 @@
 
         $('.entry').slideUp("slow");
         $('#bg-music')[0].play();
+        $('#music-button').addClass("rotating"); 
+    });
+
+    // Music Button
+    $('#music-controllers').on("click", function () {
+        $("#music-button").toggleClass("rotating");
+        if ($("#music-button").hasClass("rotating")) {
+            $('#bg-music')[0].play();
+            $("#pause-button").hide();
+            $("#music-button").removeClass("fade-button");
+        } else {
+            $('#bg-music')[0].pause();
+            $("#pause-button").show();
+            $("#music-button").addClass("fade-button");
+        }
     });
     
     var wind = $(window);
@@ -431,7 +446,6 @@
     });
     
 }());
-
 
 // Countdown wedding
   (function () {
