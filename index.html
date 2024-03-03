@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)https://duruthemes.com/demo/html/mary-brian/demo1/index.html -->
 <html lang="en"
     class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 
@@ -24,10 +23,7 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/YouTubePopUp.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -58,14 +54,16 @@
                     <div class="col-12">
                         <h4>Dear </h4>
                         <p class="guest-name">{$guestName}</p>
+                        <!-- Minimize the below line -->
                         <h2>You Are Invited!</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <h4>The wedding of</h4>
+                        <h4>The Wedding Celebration of</h4>
                         <h2>Japhet &amp; Katrina</h2>
-                        <p>Press anywhere to continue</p>
+                        <!-- Place the below p tag into a button like view -->
+                        <p>Open Invitation</p>
                     </div>
                 </div>
             </div>
@@ -89,10 +87,10 @@
             <!-- Logo -->
             <div class="logo-wrapper navbar-brand valign">
                 <div class="logo">
-                    <!-- <img src="images/logo-light.png" class="logo-img" alt=""> -->
-                    <a class="nav-logo" data-scroll-nav="0">
+                    <img src="img/logo-w-crest.png" class="logo-img nav-logo" data-scroll-nav="0">
+                    <!-- <a class="nav-logo" data-scroll-nav="0">
                         <h2>Japhet &amp; Katrina</h2>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -108,20 +106,6 @@
                     <li class="nav-item"><a class="nav-link" href="./index.html#" data-scroll-nav="3">Friends</a></li>
                     <li class="nav-item"><a class="nav-link" href="./index.html#" data-scroll-nav="4">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="./index.html#" data-scroll-nav="5">Gallery</a></li>
-                    <!-- Dropdown Menu example 
-                    <li class="nav-item dropdown"> <span class="nav-link"> Dropdown <i class="ti-angle-down"></i></span>
-                        <ul class="dropdown-menu last">
-                            <li class="dropdown-item"><a href="#">Dropdown 2</a></li>
-                            <li class="dropdown-item"><a href="#">Dropdown 2</a></li>
-                            <li class="dropdown-item"><span>Dropdown 2 <i class="ti-angle-right"></i></span>
-                                <ul class="sub-menu last">
-                                    <li class="dropdown-item"><a href="#">Dropdown 3</a></li>
-                                    <li class="dropdown-item"><a href="#">Dropdown 3</a></li>
-                                 </ul>
-                             </li>
-                        </ul>
-                    </li>
-                    -->
                     <li class="nav-item"><a class="nav-link" href="./index.html#" data-scroll-nav="6">When &amp; Where</a></li>
                     <li class="nav-item"><a class="nav-link" href="./index.html#" data-scroll-nav="7">R.S.V.P</a></li>
                 </ul>
@@ -130,12 +114,10 @@
     </nav>
     <!-- Slider section -->
     <header id="home" data-scroll-index="0">
-        <div class="mary-hero js-fullheight" style="height: 968px;">
+        <div class="slider js-fullheight" style="height: 968px;">
             <div class="flexslider js-fullheight" style="height: 968px;">
                 <ul class="slides">
-                    <li class="bg-fixed flex-active-slide"
-                        style="background-image: url(&quot;./img/with_pogi.jpg&quot;); background-position: center; width: 100%; float: left; margin-right: -100%; position: center; opacity: 1; display: block; z-index: 2;"
-                        data-overlay-dark="2">
+                    <li class="bg-fixed flex-active-slide" id="top-background">
                         <div class="overlay"></div>
                         <div class="container">
                             <div class="row">
