@@ -546,11 +546,28 @@ input[type=radio]:checked:before {
 #welcome-banner #greetings p,
 #welcome-banner #greetings h2,
 #welcome-banner h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 #greetings {
-    margin-bottom: 150%;
+    margin-bottom: 100%;
+}
+
+.open-invitation {
+    background-color: white;
+    color: black !important;
+    margin-top: 20px !important;
+    border-radius: 5px;
+    padding: 4px;
+    animation: border-pulsate 1s infinite;
+}
+
+@keyframes border-pulsate {
+    0%  { outline: 1px solid white; outline-offset: 0px; }
+    25%   { outline: 1px solid white; outline-offset: 2px; }
+    50%   { outline: 1px solid white; outline-offset: 3px; }
+    75%   { outline: 1px solid white; outline-offset: 2px; }
+    100%   { outline: 1px solid white; outline-offset: 0px; }
 }
 
 /* LOGO */
