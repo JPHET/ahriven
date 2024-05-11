@@ -145,17 +145,17 @@
             logo = $(".navbar .logo> img");
         if(bodyScroll > 100){
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-w-crest.png');
+            logo.attr('src', 'img/assets/logo/logo-w-crest.png');
         }else{
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-w-crest.png');
+            logo.attr('src', 'img/assets/logo/logo-w-crest.png');
         }
     });
     
     // Close navbar-collapse when a  clicked
-    $(".navbar-nav .dropdown-item a").on('click', function () {
+    $(".navbar-nav a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
-    });
+    })
     
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
