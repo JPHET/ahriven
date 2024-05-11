@@ -573,7 +573,7 @@ input[type=radio]:checked:before {
     width: 400px;
     background-size: 200px;
     background-position: center center;
-    background-image: url('../img/asstets/logo/k&j-pink-initials.png');
+    background-image: url('../img/assets/logo/k&j-pink-initials.png');
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
