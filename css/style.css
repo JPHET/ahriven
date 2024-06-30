@@ -512,7 +512,7 @@ input[type=radio]:checked:before {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,7 +529,7 @@ input[type=radio]:checked:before {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
