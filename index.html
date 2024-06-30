@@ -416,6 +416,12 @@
                 </div>
             </div>
         </div>
+        <div class="entourage-bg-pattern-left">
+            <img src="img/assets/objects/flower.webp" alt="">
+        </div>
+        <div class="entourage-bg-pattern-right">
+            <img src="img/assets/objects/flower.webp" alt="">
+        </div>
     </div>
     </div>
 
@@ -599,9 +605,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="guest-name">Guest/s Name:</label>
-                                    <input name="name" id="guest-name" type="text" class="form-control guest-name"
-                                        placeholder="Name" required="" disabled>
+                                    <label>Guest Name:</label>
+                                    <label name="name" id="guest-name" placeholder="Name"></label>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -627,7 +632,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input name="submit" type="submit" class="btn" value="SEND">
+                                    <button class="btn btn-block" data-toggle="modal" data-target="submit">Send</button>
                                 </div>
                             </div>
                         </div>
@@ -678,8 +683,6 @@
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/YouTubePopUp.js"></script>
     <script src="./js/template.js"></script>
-
-
 </body>
 
 </html>
