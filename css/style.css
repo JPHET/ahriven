@@ -512,7 +512,7 @@ input[type=radio]:checked:before {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,7 +529,7 @@ input[type=radio]:checked:before {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1144,6 +1144,10 @@ input[type=radio]:checked:before {
     text-transform: uppercase;
 }
 
+#rsvp-form {
+    background-color: rgb(255 255 255 / 95%);
+}
+
 .rsvp h2 {
     color: var(--gray);
     font-family: 'Didact Gothic', sans-serif;
@@ -1703,6 +1707,11 @@ li.event .icon {
 }
 
 /* =======  Attire style  ======= */
+
+#attire-link {
+    color: var(--gray);
+}
+
 .motif-colors {
     margin-bottom: 20px;
 }
@@ -1715,7 +1724,7 @@ li.event .icon {
 }
 
 .dot-onix {
-    background-color: #393a3b;
+    background-color: #5c5d5fde;
 }
 
 .dot-rose {
@@ -2420,6 +2429,27 @@ li.event .icon {
 /* =======  Entourage  ======= */
 #entourage {
     background: radial-gradient(circle, rgba(255,255,255,1) 75%, rgba(255,198,207,1) 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.entourage-bg-pattern-left {
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    top: 52rem;
+    transform: rotate(26deg);
+    left: -173px;
+}
+
+.entourage-bg-pattern-right {
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+    top: 52rem;
+    transform: rotate(-55deg);
+    right: -13rem;
 }
 
 .highlight {
